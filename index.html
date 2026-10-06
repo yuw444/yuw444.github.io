@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yu Wang, PhD</title>
+  <meta name="description" content="Yu Wang — Research Scientist at the Medical College of Wisconsin. Statistical genetics, bioinformatics, and statistical software.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f766e'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='28' fill='white' text-anchor='middle'%3EYW%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top">Yu Wang</a>
+      <nav>
+        <a href="#research">Research</a>
+        <a href="#software">Software</a>
+        <a href="#publications">Publications</a>
+        <a href="#awards">Awards</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top" class="wrap">
+    <section class="hero">
+      <h1>Yu Wang, PhD</h1>
+      <p class="role">Research Scientist · Medical College of Wisconsin</p>
+      <p class="bio">
+        I am a biostatistician who builds statistical methods and fast,
+        open-source software for genomic data. My recent work covers rare-variant
+        association testing that uses local ancestry, detection of mosaic chromosomal
+        alterations from whole-genome sequencing, study design for single-cell RNA-seq,
+        and random forests for composite survival endpoints. Most of my tools
+        pair a user-facing R interface with a C backend.
+      </p>
+      <ul class="links">
+        <li><a href="mailto:ywang@mcw.edu">ywang@mcw.edu</a></li>
+        <li><a href="https://github.com/yuw444">GitHub</a></li>
+        <li><a href="https://scholar.google.com/citations?user=0xSDRvYAAAAJ">Google Scholar</a></li>
+      </ul>
+    </section>
+
+    <section id="research">
+      <h2>Research</h2>
+      <div class="themes">
+        <div class="theme">
+          <h3>Statistical genetics</h3>
+          <p>Rare-variant aggregate tests informed by local ancestry in admixed
+          populations; gene- and pathway-level tests for survival outcomes; detection of
+          mosaic chromosomal alterations from WGS.</p>
+        </div>
+        <div class="theme">
+          <h3>Single-cell &amp; sequencing methods</h3>
+          <p>Read-level simulation for single-cell RNA-seq study design, and efficient
+          processing of FastQ/BAM data down to cell × UMI and exon-level summaries.</p>
+        </div>
+        <div class="theme">
+          <h3>Survival analysis &amp; machine learning</h3>
+          <p>Random forests for composite endpoints, and Bayesian monitoring rules for
+          toxicity in multi-cohort phase II clinical trials.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="software">
+      <h2>Software</h2>
+      <div class="cards">
+        <article class="card">
+          <div class="card-head"><h3>LANTERN</h3><span class="tags">R · C</span></div>
+          <p>Rare-variant aggregate association tests that use local ancestry tracts;
+          supports up to five ancestries. Submitted to Bioconductor.</p>
+          <p class="card-links">
+            <a href="https://github.com/yuw444/lantern">Code</a>
+            <a href="https://yuw444.github.io/lantern/">Docs</a>
+            <a href="https://doi.org/10.64898/2026.04.24.26351693">Preprint</a>
+          </p>
+        </article>
+        <article class="card">
+          <div class="card-head"><h3>Rforce</h3><span class="tags">R · C/C++</span></div>
+          <p>Random forests for composite endpoints of non-fatal and terminal events,
+          built on generalized estimating equations (GEE). Won the 2024 ASA Student Paper Competition Award.</p>
+          <p class="card-links">
+            <a href="https://github.com/yuw444/Rforce">Code</a>
+            <a href="https://yuw444.github.io/Rforce/">Docs</a>
+            <a href="https://doi.org/10.1002/sim.70413">Paper</a>
+          </p>
+        </article>
+        <article class="card">
+          <div class="card-head"><h3>FastQDesign</h3><span class="tags">R · C/C++</span></div>
+          <p>Study design for single-cell RNA-seq, based on realistic simulation at the
+          FastQ read level.</p>
+          <p class="card-links">
+            <a href="https://github.com/yuw444/FastQDesign">Code</a>
+            <a href="https://yuw444.github.io/FastQDesign/">Docs</a>
+            <a href="https://doi.org/10.1038/s42003-025-07938-8">Paper</a>
+          </p>
+        </article>
+        <article class="card">
+          <div class="card-head"><h3>aSPUS</h3><span class="tags">R · C</span></div>
+          <p>Adaptive sum of powered score tests for gene and pathway association with
+          survival traits, using permutation-based inference.</p>
+          <p class="card-links">
+            <a href="https://github.com/yuw444/aSPUS">Code</a>
+            <a href="https://yuw444.github.io/aSPUS/">Docs</a>
+            <a href="https://arxiv.org/abs/2604.01625">Preprint</a>
+          </p>
+        </article>
+        <article class="card">
+          <div class="card-head"><h3>fastF</h3><span class="tags">C</span></div>
+          <p>Command-line tool to sample, filter and summarize single-cell FastQ/BAM
+          data, down to a UMI count matrix. Companion to FastQDesign.</p>
+          <p class="card-links">
+            <a href="https://github.com/yuw444/fastF">Code</a>
+            <a href="https://doi.org/10.1038/s42003-025-07938-8">Paper</a>
+          </p>
+        </article>
+        <article class="card">
+          <div class="card-head"><h3>exonBlocks</h3><span class="tags">C · R</span></div>
+          <p>Maps cell barcode + UMI read blocks to the exons they overlap.</p>
+          <p class="card-links">
+            <a href="https://github.com/yuw444/exonBlocks">Code</a>
+          </p>
+        </article>
+        <article class="card card-dev">
+          <div class="card-head"><h3>MoSAIC</h3><span class="tags">C · in development</span></div>
+          <p>Hidden Markov model for detecting mosaic chromosomal alterations from WGS.
+          It combines read depth, phased B-allele frequency and switch error rate.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="publications">
+      <h2>Publications</h2>
+      <p class="muted">For the complete and current list, see
+        <a href="https://scholar.google.com/citations?user=0xSDRvYAAAAJ">Google Scholar</a>.</p>
+
+      <h3 class="pub-group">Methods</h3>
+      <ol class="pubs">
+        <li>
+          <span class="title">LANTERN: Leveraging Local Ancestry Tracts to Enhance Rare-Variant Aggregate Association Testing.</span>
+          <span class="authors"><b>Wang Y</b>, Tuftin B, Raffield LM, Hidalgo B, Kerns SL, DeWan AT, Leal SM, Auer PL.</span>
+          <span class="venue"><i>medRxiv</i>, 2026.</span>
+          <a href="https://doi.org/10.64898/2026.04.24.26351693">doi</a>
+        </li>
+        <li>
+          <span class="title">Data-adaptive gene and pathway-based tests for rare-variant associations with survival outcomes.</span>
+          <span class="authors"><b>Wang Y</b>, Ahn KW, Kerns SL, Hall W, Seibold P, Talbot CJ, Vega A, Rosenstein BS, Usmani N, West CML, Veldeman L, Auer PL, Chen Z.</span>
+          <span class="venue"><i>arXiv</i>:2604.01625, 2026.</span>
+          <a href="https://arxiv.org/abs/2604.01625">arXiv</a>
+        </li>
+        <li>
+          <span class="title">Toxicity Monitoring Rule for a Two-Cohort Phase II Clinical Trial with Bivariate Beta Prior.</span>
+          <span class="authors"><b>Wang Y</b>, Szabo A.</span>
+          <span class="venue"><i>arXiv</i>:2603.28615, 2026.</span>
+          <a href="https://arxiv.org/abs/2603.28615">arXiv</a>
+        </li>
+        <li>
+          <span class="title">Rforce: Random Forests for Composite Endpoints.</span>
+          <span class="authors"><b>Wang Y</b>, Kim S, Lin CW, Ahn KW.</span>
+          <span class="venue"><i>Statistics in Medicine</i> 45(3–5):e70413, 2026.</span>
+          <a href="https://doi.org/10.1002/sim.70413">doi</a>
+        </li>
+        <li>
+          <span class="title">A realistic FastQ-based framework FastQDesign for scRNA-seq study design issues.</span>
+          <span class="authors"><b>Wang Y</b>, Chen YG, Ahn KW, Lin CW.</span>
+          <span class="venue"><i>Communications Biology</i> 8:547, 2025.</span>
+          <a href="https://doi.org/10.1038/s42003-025-07938-8">doi</a>
+        </li>
+      </ol>
+
+      <h3 class="pub-group">Collaborative</h3>
+      <ol class="pubs">
+        <li>
+          <span class="title">Both soluble and cell surface CD137 expressed by Foxp3+ CD4 T cells restrain autoimmune diabetes.</span>
+          <span class="authors">Nabi R, Lin CW, <b>Wang Y</b>, Ciecko AE, Foda BM, Wang Y, Drewek A, Lieberman SM, Ridgway WM, Chen YG.</span>
+          <span class="venue"><i>Journal of Experimental Medicine</i> 223(8):e20252647, 2026.</span>
+          <a href="https://doi.org/10.1084/jem.20252647">doi</a>
+        </li>
+        <li>
+          <span class="title">Making invisible tumor truths visible: CHIMERA-DDR score unmasks clonal complexity and concurrent DNA repair deficiencies in advanced prostate cancer (Abstract A014).</span>
+          <span class="authors">De Sarkar N, Sharma K, Wilson D, <b>Wang Y</b>, Auer P.</span>
+          <span class="venue"><i>Cancer Research</i> 86(2 Suppl), 2026.</span>
+          <a href="https://doi.org/10.1158/1538-7445.prostateca26-a014">doi</a>
+        </li>
+        <li>
+          <span class="title">CHIMERA-DDR: A Machine Learning Framework for Classifying Heterogeneous Mismatch-Repair and Homologous-Recombination Deficiency Patterns in Prostate Cancer.</span>
+          <span class="authors">Sharma K, Wilson D, <b>Wang Y</b>, et al.</span>
+          <span class="venue"><i>bioRxiv</i>, 2025.</span>
+          <a href="https://doi.org/10.1101/2025.10.08.680958">doi</a>
+        </li>
+        <li>
+          <span class="title">Heterogeneity of Islet-Infiltrating IL-21+ CD4 T Cells in a Mouse Model of Type 1 Diabetes.</span>
+          <span class="authors">Ciecko AE, <b>Wang Y</b>, Harleston S, Drewek A, Serreze DV, Geurts AM, Lin CW, Chen YG.</span>
+          <span class="venue"><i>The Journal of Immunology</i> 210(7):935–946, 2023.</span>
+          <a href="https://doi.org/10.4049/jimmunol.2200712">doi</a>
+        </li>
+        <li>
+          <span class="title">Frequent upregulation of HER2 protein in hormone-receptor-positive HER2-negative breast cancer after short-term neoadjuvant endocrine therapy.</span>
+          <span class="authors">Chaudhary L, Jorns J, Sun Y, et al. (incl. <b>Wang Y</b>).</span>
+          <span class="venue"><i>Breast Cancer Research and Treatment</i> 201(3), 2023.</span>
+          <a href="https://doi.org/10.1007/s10549-023-07038-3">doi</a>
+        </li>
+        <li>
+          <span class="title">Epidemiology and outcomes of primary pediatric lung malignancies: Updates from the SEER database.</span>
+          <span class="authors">Smith NJ, Mukherjee D, <b>Wang Y</b>, Brazauskas R, Nelson AA, Cortina CS.</span>
+          <span class="venue"><i>The American Journal of Surgery</i> 222(4):861–866, 2021.</span>
+          <a href="https://doi.org/10.1016/j.amjsurg.2021.01.037">doi</a>
+        </li>
+      </ol>
+    </section>
+
+    <section id="awards">
+      <h2>Awards</h2>
+      <ul class="awards">
+        <li><span class="year">2024</span>
+          <span>Student Paper Competition Award, American Statistical Association
+          (Sections on Statistical Computing and Statistical Graphics), for
+          <i>Rforce: Random Forests for Composite Endpoints</i>.</span></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="wrap footer">
+    <p>© 2026 Yu Wang · Last updated October 2026</p>
+  </footer>
+</body>
+</html>
